@@ -15,8 +15,13 @@ class TPegawai extends Model
         'tgl_lahir',
         'jk',
         'agama',
+        'alamat',
         'kode_kel',
         'kode_prov',
+    ];
+
+    protected $casts = [
+        'tgl_lahir' => 'datetime'
     ];
 
     public function kelurahan()
